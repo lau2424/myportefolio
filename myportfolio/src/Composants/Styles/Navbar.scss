@@ -1,0 +1,67 @@
+.nav-parent {
+  width: 110px;
+  height: 100%;
+  position: absolute;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+
+  img {
+    width: 60px;
+  }
+}
+
+
+.nav-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  img {
+    animation-name: wave;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
+  h3 {
+    letter-spacing: .2rem;
+    font-size: 30px;
+    margin-top: 30px;
+    writing-mode: vertical-lr;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+}
+
+@keyframes wave {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+.nav-buttom {
+  letter-spacing: .2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  h3 {
+    writing-mode: vertical-lr;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  img {
+    margin: 10px;
+  }
+}
