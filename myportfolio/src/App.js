@@ -19,9 +19,7 @@ function App() {
     <div>
       <Navbar />
       <Profil />
-
-
-  </div>
+    </div>
 
 
   );
